@@ -1,0 +1,412 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    color: #666666;
+    background: #33414c;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+    /* Header */
+
+aside {
+     margin: 0 auto;
+    position: relative;
+    display: block;
+    overflow: auto;
+    z-index: 100;
+}
+
+
+.header__menu {
+    height: 100%;
+    width: 100px;
+    background: #666;
+    position: fixed; 
+}
+
+.logo {
+    background: url("../img/logo.png") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    background-size: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.logo:hover {
+    opacity: 0.6;
+    transition:  opacity 0.2s linear;
+    color:red;
+}
+
+.header__menu nav{
+    margin-top: 150px;
+    position: relative;
+}
+
+.active {
+	font-size: 14px;
+    text-align: center;
+    color: red;
+    margin-top: 0px;
+}
+
+aside nav a{
+	position: relative;
+	display: block;
+    text-decoration: none;
+    width: 60px;
+    height:75px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+
+aside nav a i{	
+    background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	height: 60px;
+	width: 60px;
+}
+
+
+aside nav a div {
+	position:absolute;
+	top: 60px;
+}
+
+aside nav a:nth-child(1) i{
+	position:relative;
+    background-image: url("../img/model.png");
+}
+
+aside nav a:nth-child(1) i:hover {
+    animation: bounce 0.8s;
+}
+
+aside nav a:nth-child(1):hover div{
+    color: red;
+}
+
+aside nav a:nth-child(2) i {
+    background-image: url("../img/drive.png");
+}
+
+aside nav a:nth-child(2) i:hover {
+    animation: rotate360 0.8s;
+}
+
+aside nav a:nth-child(2):hover div{
+    color: red;
+}
+
+aside nav a:nth-child(3) {
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: url("../img/configurator.png") no-repeat;
+    background-size: contain;
+}
+
+aside nav a:nth-child(3):hover {
+    animation: left_right 0.8s;
+}
+
+aside nav a:nth-child(4) {
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: url("../img/special.png") no-repeat;
+    background-size: contain;
+}
+
+aside nav a:nth-child(4):hover {
+    animation: rotate90 0.8s;
+}
+
+aside nav a:nth-child(5) {
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: url("../img/service.png") no-repeat;
+    background-size: contain;
+}
+
+aside nav a:nth-child(5):hover {
+    animation: up_down 0.8s;
+}
+
+aside nav a:nth-child(6) {
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: url("../img/more.png") no-repeat;
+    background-size: contain;
+}
+
+aside nav a:nth-child(6):hover {
+    animation: bounce 0.8s;
+}
+
+aside nav a {
+    text-decoration: none;
+    transition:  opacity 0.2s linear;
+}
+
+.header__menu nav a div {
+    font-size: 14px;
+    text-align: center;
+    color: #dcdcdc;
+    margin-top: 0px;
+    display: block;
+}
+
+    /* Content */
+
+.content {
+    padding-left: 100px;
+    text-align: center;
+    color: #dcdcdc;
+}
+
+.content span {
+    font-size: 30px;
+}
+
+.content ul {
+    padding: 0;
+    margin-top: 40px;    
+}
+
+.video {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.content span:nth-child(2) {
+    font-size: 35px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.content span:hover {
+    color: red;
+    transition: 0.3s linear;
+}
+
+.content ul li {
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+    border: 3px solid;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #dcdcdc;
+}
+
+.main_zoom:hover {
+    transform: scale(1.05);
+    transition: 0.3s linear;
+}
+
+#mazda2 {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazda2.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda3_hatch {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazda3_hatch.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda3_sedan {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazda3_sedan.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda6 {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazda6.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda6_wagon {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazda6_wagon.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda_cx3 {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazdacx3.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda_cx30 {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazdacx30.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda_cx5 {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazdacx5.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda_cx8 {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazdacx8.png') no-repeat;
+    background-size: contain;
+}
+
+#mazda_roadster {
+    width: 400px;
+    display: block;
+    height: 200px;
+    background: url('../img/models/mazda_roadster.png') no-repeat;
+    background-size: contain;
+}
+
+	/* Page Special */
+
+.special {
+	display:inline-block;
+	position: relative;
+}
+	
+	/* Footer */
+	
+footer {
+	width: 100%;
+	height: 80px;
+	background: #404040;
+}
+	
+footer div {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 25px;
+	color: silver;
+}
+	
+    /* Animations */
+
+@keyframes up_down {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes left_right {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes rotate90 { 
+    0% { 
+        transform: rotate(0deg); 
+    }
+    50% { 
+        transform: rotate(65deg); 
+    }
+    100% { 
+        transform: rotate(0deg); 
+    }
+}
+
+@keyframes rotate360 { 
+    from { 
+        transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg); 
+    } 
+}
+
+@keyframes bounce {
+ 0%, 20%, 60%, 100% {
+	top: 0;
+ }
+ 
+ 40% {
+	top: -20px;
+ }
+ 
+ 80% {
+	top: -10px;
+ }
+}
