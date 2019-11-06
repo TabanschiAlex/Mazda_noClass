@@ -16,7 +16,7 @@ body {
     /* Header */
 
 aside {
-     margin: 0 auto;
+    margin: 0 auto;
     position: relative;
     display: block;
     overflow: auto;
@@ -96,7 +96,7 @@ aside nav a:nth-child(1) i:hover {
     animation: bounce 0.8s;
 }
 
-aside nav a:nth-child(1):hover div{
+aside nav a:nth-child(1):hover span{
     color: red;
 }
 
@@ -108,72 +108,57 @@ aside nav a:nth-child(2) i:hover {
     animation: rotate360 0.8s;
 }
 
-aside nav a:nth-child(2):hover div{
+aside nav a:nth-child(2):hover span{
     color: red;
 }
 
-aside nav a:nth-child(3) {
-    display: block;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background: url("../img/configurator.png") no-repeat;
-    background-size: contain;
+aside nav a:nth-child(3) i {
+    background-image: url("../img/configurator.png");
 }
 
-aside nav a:nth-child(3):hover {
+aside nav a:nth-child(3) i:hover {
     animation: left_right 0.8s;
 }
 
-aside nav a:nth-child(4) {
-    display: block;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background: url("../img/special.png") no-repeat;
-    background-size: contain;
+aside nav a:nth-child(3):hover span{
+    color: red;
 }
 
-aside nav a:nth-child(4):hover {
+aside nav a:nth-child(4) i {
+    background-image: url("../img/special.png");
+}
+
+aside nav a:nth-child(4) i:hover {
     animation: rotate90 0.8s;
 }
 
-aside nav a:nth-child(5) {
-    display: block;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background: url("../img/service.png") no-repeat;
-    background-size: contain;
+aside nav a:nth-child(4):hover span{
+    color: red;
 }
 
-aside nav a:nth-child(5):hover {
+aside nav a:nth-child(5) i {
+    background-image: url("../img/service.png");
+}
+
+aside nav a:nth-child(5) i:hover {
     animation: up_down 0.8s;
 }
 
-aside nav a:nth-child(6) {
-    display: block;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background: url("../img/more.png") no-repeat;
-    background-size: contain;
+aside nav a:nth-child(5):hover span{
+    color: red;
 }
 
-aside nav a:nth-child(6):hover {
+aside nav a:nth-child(6) i {
+    background-image: url("../img/more.png");
+    position:relative;
+}
+
+aside nav a:nth-child(6) i:hover {
     animation: bounce 0.8s;
+}
+
+aside nav a:nth-child(6):hover span{
+    color: red;
 }
 
 aside nav a {
@@ -181,8 +166,8 @@ aside nav a {
     transition:  opacity 0.2s linear;
 }
 
-.header__menu nav a div {
-    font-size: 14px;
+.header__menu nav a span {
+    font-size: 11px;
     text-align: center;
     color: #dcdcdc;
     margin-top: 0px;
@@ -206,18 +191,18 @@ aside nav a {
     margin-top: 40px;    
 }
 
-.video {
+video {
     margin-top: 50px;
     width: 100%;
 }
 
-.content span:nth-child(2) {
+.content ul li a p {
     font-size: 35px;
     margin: 0 0 20px;
     padding: 0;
 }
 
-.content span:hover {
+.content ul li a:hover, .content ul li a p:hover {
     color: red;
     transition: 0.3s linear;
 }
