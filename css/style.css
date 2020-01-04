@@ -204,14 +204,46 @@ section ol li {
 
 section ol li div {
     width: 400px;
-    background: #fff;
-    border: 3px solid #fff;
+    background: #999;
+    border: 3px solid #999;
     border-radius: 5px;
     overflow: hidden;
 }
 
-section ol li div a {
+section ol li a {
     text-decoration: none;
+}
+
+section ol li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+section ol li a div h2{
+    color: black;
+}
+
+.promo {
+    background-image: url(../img/main/promo_1800x1098.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.promo div {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 5vh;
+}
+
+.promo div a div{
+    width: 40%;
+    margin-top: 10%;
+    background: red;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
 }
 
 /* Page Models */
@@ -357,6 +389,7 @@ section ul li a hr {
 
 .drive p {
     color: black;
+    top: 100px;
 }
 
 .drive ol li a {
