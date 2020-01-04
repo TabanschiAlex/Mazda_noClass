@@ -246,7 +246,13 @@ section ol li a div h2{
     vertical-align: middle;
 }
 
-/* Page Models */
+    /* Page Configurator */
+
+.configurator img {
+    width: 70%;
+}
+
+    /* Page Models */
 
 section ul li a p {
     font-size: 35px;
@@ -254,7 +260,7 @@ section ul li a p {
     padding: 0;
 }
 
-section ul li a:hover, .content ul li a p:hover {
+section ul li a:hover, section ul li a p:hover {
     color: red;
     transition: 0.3s linear;
 }
@@ -400,6 +406,29 @@ section ul li a hr {
 .drive ol li:hover {
     background: #fff;
     opacity: 0.6;
+}
+
+    /* Page service */
+
+.service {
+    
+}
+
+.service p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.service div {
+    display: inline-block;
+}
+
+.service div span {
+    width: 50%;
+    float: left;
 }
 
 	/* Footer */
