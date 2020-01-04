@@ -13,6 +13,11 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
     /* Header */
 
 aside {
@@ -186,6 +191,31 @@ video {
     width: 100%;
 }
 
+/* Main Page */
+
+section ol {
+    margin-right: 40px;
+}
+
+section ol li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+section ol li div {
+    width: 400px;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section ol li div a {
+    text-decoration: none;
+}
+
+/* Page Models */
+
 section ul li a p {
     font-size: 35px;
     margin: 0 0 20px;
@@ -212,9 +242,18 @@ section ul li a {
     color: #dcdcdc;
 }
 
+section ul li a hr {
+    color: #dcdcdc;
+}
+
+.main_zoom {
+    transform: scale(1.00);
+    transition: 0.4s linear;
+}
+
 .main_zoom:hover {
     transform: scale(1.05);
-    transition: 0.3s linear;
+    transition: 0.4s linear;
 }
 
 #mazda2 {
@@ -303,7 +342,33 @@ section ul li a {
 	display:inline-block;
 	position: relative;
 }
-	
+
+    /* Page Drive */   
+
+.drive {
+    width: 90%;
+    background: #999;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 8px;
+}
+
+.drive p {
+    color: black;
+}
+
+.drive ol li a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.drive ol li:hover {
+    background: #fff;
+    opacity: 0.6;
+}
+
 	/* Footer */
 	
 footer {
@@ -385,7 +450,3 @@ footer div {
 	top: -10px;
  }
 }
-
-    /* Screen Resolution */
-
-@media screen and (width: )
