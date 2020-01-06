@@ -438,7 +438,7 @@ section ul li a hr {
 	
 footer {
 	width: 100%;
-	height: 80px;
+	height: auto;
 	background: #404040;
 }
 	
@@ -446,21 +446,90 @@ footer div {
 	text-align: center;
 	font-size: 30px;
 	padding-top: 25px;
+    padding-bottom: 25px;
 	color: silver;
 }
 
-    /* Different resolution */
+    /* Mobile resolution */
 
 @media screen and (max-width: 1024px), screen and (max-height: 720px) {
     
     header {
         display: inline-block;
         width: 100%;
-        height: 10%;
+        height: 100px;
         z-index: 100;
         position: fixed;
         background: #666;
     }
+
+    header nav {
+        margin: 20px 0;
+        position: relative;
+		min-height: 40px;
+    }
+    
+    header nav ul {
+        margin: 0;
+        width: 200px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #FAFAFA;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    }
+    
+    header nav ul li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+    }
+    
+    .current {
+        display: block;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+    header nav ul li a {
+        display: block;
+		padding: 5px -5px 5px 32px;
+		text-align: center;
+        text-decoration: none;
+        color: #999;
+        line-height: 100%;
+        font-size: 20px;
+    }
+    
+    .current a {
+        background: none;
+		color: #666;
+        border-radius: 3px;
+    }
+    
+    header nav a:hover {
+	    color: #000;
+    }
+    
+    header nav ul:hover {
+		background-image: none;
+	}
+	header nav ul:hover li {
+		display: block;
+		margin: 0px 0 10px;
+	}
+	header nav ul:hover .current {
+        margin-top: 10px;
+	}
+ 
+	header nav ul {
+		left: auto;
+		right: 0;
+	}
     
     .logo {
         margin-top: 5px;
@@ -473,8 +542,8 @@ footer div {
     }
     
     section {
-        padding-left: 0px;
-        padding-top: 15%;
+        padding-left: 0;
+        padding-top: 100px;
     }
 
     section span {
@@ -482,7 +551,7 @@ footer div {
     }
 
     
-    /* Main Page */
+        /* Main Page */
 
     section ol {
         margin: 0;
@@ -533,6 +602,24 @@ footer div {
         vertical-align: middle;
     }
 
+    h1 {
+        font-size: 40px;
+    }
+    
+        /* Page Models */
+    
+    #mazda2, #mazda3_hatch, #mazda3_sedan, #mazda6, #mazda6_wagon, #mazda_cx3, #mazda_cx30, #mazda_cx5, #mazda_cx8, #mazda_roadster {
+        width: 100%;
+    }
+    
+        /* Footer */
+    
+    footer div {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: silver;
+    }   
 }
 
     /* Animations */
